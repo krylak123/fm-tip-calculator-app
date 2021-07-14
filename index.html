@@ -14,25 +14,50 @@
 
 <body>
 
-  Bill
+  <div class="wrapper">
+    <h1 class="title">spli<br>tter</h1>
+    <main class="container">
+      <div class="container__input input">
+        <div class="input__input-form-wrap">
+          <label for="bill" class="input__label">Bill</label>
+          <input type="number" class="input__input-form" id="bill">
+        </div>
+        <div class="input__select-wrap">
+          <label class="input__label">Select Tip %</label>
+          <div class="input__select-btns-wrap">
+            <button class="input__btn">5%</button>
+            <button class="input__btn">10%</button>
+            <button class="input__btn">15%</button>
+            <button class="input__btn">25%</button>
+            <button class="input__btn">50%</button>
+            <button class="input__btn">Custom</button>
+          </div>
+        </div>
+        <div class="input__input-form-wrap">
+          <label for="people" class="input__label">Number of People</label>
+          <input type="number" class="input__input-form" id="people">
+        </div>
+      </div>
+      <div class="container__output output">
+        <div class="output__result-wrap">
+          <div class="output__text-content">
+            <p class="output__title">Tip Amount</p>
+            <p class="output__subtitle">/ person</p>
+          </div>
+          <h2 class="output__result output__result--tip">0.00</h2>
+        </div>
+        <div class="output__result-wrap">
+          <div class="output__text-content">
+            <p class="output__title">Total</p>
+            <p class="output__subtitle">/ person</p>
+          </div>
+          <h2 class="output__result output__result--total">0.00</h2>
+        </div>
+        <button class="output__btn">Reset</button>
+      </div>
+    </main>
+  </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
 </body>
 
 </html>
