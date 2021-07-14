@@ -7,3 +7,8 @@
 html {
     font-family: $font-family;
 }
+
+body {
+    min-height: 100vh;
+    background-color: $color-light-grayish-cyan-1;
+}

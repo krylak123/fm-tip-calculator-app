@@ -1,0 +1,99 @@
+.input {
+    &__input-form-wrap {
+        margin-bottom: 30px;
+        padding: 0 10px;
+
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
+    }
+
+    &__input-form-wrap--people {
+        &.active .input__input-form--people {
+            box-shadow: 0 0 0 2px red;
+        }
+
+        &.active .input__label--warn {
+            visibility: visible;
+        }
+    }
+
+    &__select-wrap {
+        margin-bottom: 30px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $color-dark-grayish-cyan-1;
+
+        &--warn {
+            visibility: hidden;
+            color: red;
+        }
+    }
+
+    &__people-label-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input-wrap {
+        position: relative;
+    }
+
+    &__input-form {
+        padding: 5px 15px;
+        width: 100%;
+        font-family: $font-family;
+        font-size: $input-font-size;
+        font-weight: bold;
+        text-align: right;
+        background-color: $color-light-grayish-cyan-2;
+        outline: none;
+        border-style: none;
+        border-radius: 5px;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $color-cyan;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(20px, -50%);
+    }
+
+    &__select-btns-wrap {
+        display: grid;
+        grid-template-columns: calc(50% - 25px /2) calc(50% - 25px /2);
+        gap: 20px;
+    }
+
+    &__btn {
+        display: block;
+        padding: 5px 0;
+        font-size: $input-font-size;
+        font-family: $font-family;
+        font-weight: bold;
+        color: $color-white;
+        background-color: $color-dark-cyan;
+        outline: none;
+        border-style: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-dark-cyan;
+            background-color: $color-light-grayish-cyan-1;
+        }
+
+        &.active {
+            color: $color-dark-cyan;
+            background-color: $color-cyan;
+        }
+    }
+}
