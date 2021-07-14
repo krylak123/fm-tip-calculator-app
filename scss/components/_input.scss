@@ -71,6 +71,10 @@
         display: grid;
         grid-template-columns: calc(50% - 25px /2) calc(50% - 25px /2);
         gap: 20px;
+
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: calc(33% - 25px /2) calc(33% - 25px /2) calc(33% - 25px /2);
+        }
     }
 
     &__btn {
@@ -94,6 +98,18 @@
         &.active {
             color: $color-dark-cyan;
             background-color: $color-cyan;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        flex-basis: 48%;
+        padding: 10px 0;
+
+        &__input-form-wrap {
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

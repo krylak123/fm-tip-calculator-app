@@ -4,4 +4,9 @@
     padding: 25px;
     border-radius: 25px;
     background-color: $color-white;
+
+    @media screen and (min-width:1440px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
