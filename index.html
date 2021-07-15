@@ -21,19 +21,19 @@
         <div class="input__input-form-wrap input__input-form-wrap--bill">
           <label for="bill" class="input__label">Bill</label>
           <div class="input__input-wrap">
-            <input type="number" class="input__input-form" id="bill">
+            <input type="number" class="input__input-form" id="bill" min="0">
             <img src="images/icon-dollar.svg" alt="dollar icon" class="input__icon">
           </div>
         </div>
         <div class="input__select-wrap">
           <label class="input__label">Select Tip %</label>
           <div class="input__select-btns-wrap">
-            <button class="input__btn">5%</button>
-            <button class="input__btn">10%</button>
-            <button class="input__btn">15%</button>
-            <button class="input__btn">25%</button>
-            <button class="input__btn">50%</button>
-            <input class="input__input-form" type="number" placeholder="Custom">
+            <button class="input__btn" name="btnTip" value="5">5%</button>
+            <button class="input__btn" name="btnTip" value="10">10%</button>
+            <button class="input__btn" name="btnTip" value="15">15%</button>
+            <button class="input__btn" name="btnTip" value="25">25%</button>
+            <button class="input__btn" name="btnTip" value="50">50%</button>
+            <input class="input__input-form" type="number" placeholder="Custom" id="custom">
           </div>
         </div>
         <div class="input__input-form-wrap input__input-form-wrap--people">
@@ -42,7 +42,7 @@
             <label for="people" class="input__label input__label--warn">Can't be zero</label>
           </div>
           <div class="input__input-wrap">
-            <input type="number" class="input__input-form input__input-form--people" id="people">
+            <input type="number" class="input__input-form input__input-form--people" id="people" min="0">
             <img src="images/icon-person.svg" alt="person icon" class="input__icon">
           </div>
         </div>
@@ -68,6 +68,8 @@
       </div>
     </main>
   </div>
+
+  <script src="js/index.js"></script>
 
 </body>
 
