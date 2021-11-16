@@ -15,7 +15,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first approach
 - pure JavaScript OOP
 
 ### Screenshot
